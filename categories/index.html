@@ -6,7 +6,7 @@
     
     
     
-    <title>Lining运动健身</title>
+    <title>categories | Lining运动健身</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
@@ -43,11 +43,13 @@
     
     <meta name="description" content="Lining运动健身，提供健身资讯，制定减肥方法，配置健康饮食，让你轻松减肥，快速塑形，一起嗨运动！">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Lining运动健身">
-<meta property="og:url" content="http://lining.run/index.html">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://lining.run/categories/index.html">
 <meta property="og:site_name" content="Lining运动健身">
 <meta property="og:description" content="Lining运动健身，提供健身资讯，制定减肥方法，配置健康饮食，让你轻松减肥，快速塑形，一起嗨运动！">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-07-13T05:38:53.000Z">
+<meta property="article:modified_time" content="2021-07-13T05:39:17.545Z">
 <meta property="article:author" content="Lining运动健身">
 <meta property="article:tag" content="运动健身,慢跑健身,跑步健身,减肥瘦身,健身塑形,增肌课程计划,锻炼肌肉,运动">
 <meta name="twitter:card" content="summary">
@@ -88,7 +90,7 @@
     <div class="scroll-wrap flex-col">
       <ul class="nav">
         
-              <li class="waves-block waves-effect active">
+              <li class="waves-block waves-effect">
                   <a href="/"  >
                     <i class="icon icon-lg icon-home"></i>
                     <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
@@ -102,7 +104,7 @@
                   </a>
               </li>
             
-              <li class="waves-block waves-effect">
+              <li class="waves-block waves-effect active">
                   <a href="/categories"  >
                     <i class="icon icon-lg icon-th-list"></i>
                     <span>分 类</span><i class="icon icon-lg icon-caret-left"></i>
@@ -154,7 +156,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Lining运动健身</div>
+        <div class="flex-col header-title ellipsis">分类</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -171,19 +173,29 @@
         </a>
     </div>
 </header>
-<header class="content-header index-header">
+<header class="content-header categories-header">
     
     
     <div class="container fade-scale">
         <div id="myheader">
             <h1 class="title">
-                 
-                    Lining运动健身
                 
             </h1>
             <h5 class="subtitle">
                 
-                    合理健身增肌、健康减肥瘦身、科学饮食运动
+                    <h1 id="pagetitle" class="archivestitle"></h1>
+                    <script>
+                        if(location.href.indexOf('about')!=-1){
+                            pagetitle.textContent = 'Lining运动健身';
+                        }else if(location.href.indexOf('tags')!=-1||location.href.indexOf('categories')!=-1){
+                            var a=location.href.substring(location.href.length-5,location.href.length-1);
+                            if(a==='tags'){
+                                pagetitle.textContent = '不积小流无以成江海';
+                            }else if(a==='ries'){
+                                pagetitle.textContent = '不积跬步无以至千里';
+                            }
+                        }
+                    </script>
                 
             </h5>
         </div>
@@ -191,48 +203,15 @@
 
 </header>
 
-<div class="container body-wrap">
-    <ul class="post-list">
+<div class="container body-wrap fade">
     
-        <li class="post-list-item fade">
-            <article id="post-test-my-site"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/2021/07/13/test-my-site/">test_my_site</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2021-07-13 10:45:43" datetime="2021-07-13T02:45:43.000Z"  itemprop="datePublished">2021-07-13</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        
-    
-        <div class="post-more-div">
-            <a href="/2021/07/13/test-my-site/" class="post-more waves-button">
-                阅读全文 »
-            </a>
+    	<h5 class="tag-tip">
+            <i class="icon icon-lg icon-th-list"></i>
+            目前共&nbsp;0&nbsp;大分类
+        </h5>
+        <div class="card-pool">
+            
         </div>
-    </div>
-    
-</article>
-
-        </li>
-    
-    </ul>
-
     
 
 </div>

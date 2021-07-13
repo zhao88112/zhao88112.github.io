@@ -625,45 +625,12 @@ function setTime(a) {
 }
 
 /* 一言的调用 */
-let countFail = 0
-
 function getHitokoto() {
-	$.ajax({
-		type: 'GET',
-		url: 'https://sslapi.hitokoto.cn/',
-		dataType: 'json',
-		timeout: 2500,
-		success: function(data) {
-			if (data.hitokoto.length > 12) {
-				countFail++
-				if (countFail > 5) {
-					elasticText({
-						id: 'yiyanmotto',
-						duration: 100,
-						effact: 'easeOut',
-						content: '为了正义！'
-					})
-				} else {
-					getHitokoto()
-				}
-			} else {
-				/* 签名 */
-				elasticText({
-					id: 'yiyanmotto',
-					duration: 100,
-					effact: 'easeOut',
-					content: data.hitokoto
-				})
-			}
-		},
-		error: function() {
-			elasticText({
-				id: 'yiyanmotto',
-				duration: 100,
-				effact: 'easeOut',
-				content: '生活不止眼前的苟且'
-			})
-		}
+	elasticText({
+		id: 'yiyanmotto',
+		duration: 100,
+		effact: 'easeOut',
+		content: '生活不止眼前的苟且'
 	})
 }
 

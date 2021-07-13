@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Lining运动健身</title>
+  
+  
+  <link href="http://lining.run/atom.xml" rel="self"/>
+  
+  <link href="http://lining.run/"/>
+  <updated>2021-07-13T05:40:07.705Z</updated>
+  <id>http://lining.run/</id>
+  
+  <author>
+    <name>Lining运动健身</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test_my_site</title>
+    <link href="http://lining.run/2021/07/13/test-my-site/"/>
+    <id>http://lining.run/2021/07/13/test-my-site/</id>
+    <published>2021-07-13T02:45:43.000Z</published>
+    <updated>2021-07-13T05:40:07.705Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+</feed>
